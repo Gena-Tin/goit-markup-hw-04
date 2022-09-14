@@ -422,7 +422,7 @@ a{
 }
 
 .client-card.link-client:hover {
-  border-color: solid var(--accent-color);
+  border-color: var(--accent-color);
   color: var(--accent-color);
 }
 .icon-client{
