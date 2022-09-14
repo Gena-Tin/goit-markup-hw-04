@@ -41,9 +41,12 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
-.a-inherit{
-  color: inherit;
+a{
+  color: currentColor;
 }
+
+
+
 
 /*-----remove dots from lists */
 .list-style-none {
@@ -121,10 +124,7 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.ico-cont{
-  fill: var(--submain-font-color);
-  margin-right: 10px;
-}
+
 
 /*-----page-main style*/
 .page-main {
@@ -133,6 +133,7 @@ p {
 
 /*-----page-footer style*/
 .page-footer {
+  
   background-color: var(--contrast-sections-color);
   color: var(--contrast-text-color);
   padding-top: 60px;
@@ -151,11 +152,64 @@ p {
   line-height: 1.71;
   color: inherit;
 }
+
 .footer-links {
   margin-bottom: 9px;
 }
 .footer-links:last-child {
   margin-bottom: 0;
+}
+.footer-align{
+  display: flex;
+  align-items: baseline;
+}
+
+/* соцсети футера */
+.footer-s-links{
+  margin-left: 70px;
+}
+
+.footer-s-links h3{
+  text-transform: uppercase;
+}
+.social-networks-footer{
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
+  color: var(--contrast-text-color);
+}
+.item-footer{
+  background-color: var(--transparent-ico-color);
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--ico-color);
+}
+.ico-cont{
+  fill: currentColor;
+  margin-right: 10px;
+  padding-top: 2px;
+}
+/* сщцсети для футера:  */
+
+.social-networks-footer .item-footer{
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--contrast-text-color);
+  background-color: var(--transparent-ico-color);
+}
+.ico-footer{
+  fill: currentColor;
+}
+.social-networks-footer .item-footer:hover{
+  color: var(--contrast-text-color);
+  background-color: var(--accent-color);
+}
+.social-networks-footer .item-footer + .item-footer{
+  margin-left: 10px;
 }
 
 .nav-link:hover,
@@ -166,7 +220,8 @@ p {
 .contact-nav .item:focus,
 
 .footer-contact:hover,
-.footer-contact:focus {
+.footer-contact:focus
+{
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -204,8 +259,8 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--contrast-text-color);
-  margin-bottom: 30px;
-  /* max-width: 696px; */
+  margin: 0 auto;
+  max-width: 696px;
 }
 .order-button {
   border-style: none;
@@ -220,6 +275,7 @@ p {
   padding: 1px 22px;
   cursor: pointer;
   color: var(--contrast-text-color);
+  margin-top: 30px;
 }
 .benefits-section {
   padding-top: 94px;
@@ -235,6 +291,7 @@ p {
   padding-bottom: 25px;
   padding-left: 100px;
 }
+
 
 .benefits {
   display: flex;
@@ -307,43 +364,31 @@ p {
 }
 
 /* ссылки соцсетей под командой*/
-
+/* ++++++++++++++++++++++++ */
 .social-networks{
   display: flex;
   margin-top: 16px;
   justify-content: center;
+  color: var(--submain-font-color);
 }
-.social-networks .ico{
+.social-networks .ico-item{
   padding: 12px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   fill: var(--ico-color);
 }
-.social-networks .ico:hover{
-  fill: var(--contrast-text-color);
-  background-color: var(--accent-color);
-}
-.social-networks .ico + .ico{
-  margin-left: 10px;
-}
-/* для футера:  */
-.social-networks .ico-footer{
-  padding: 12px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  fill: var(--contrast-text-color);
-  background-color: var(--transparent-ico-color);
-}
-.social-networks .ico-footer:hover{
-  
-  background-color: var(--accent-color);
-}
-.social-networks .ico-footer + .ico-footer{
-  margin-left: 10px;
-}
 
+.ico-link {
+  fill: currentColor;
+}
+.social-networks .ico-item:hover{
+  color: var(--contrast-text-color);
+  background-color: var(--accent-color);
+}
+.social-networks .ico-item + .ico-item{
+  margin-left: 10px;
+}
 
   
 /* ссылки постоянных клиентов */
@@ -364,16 +409,24 @@ p {
   padding-right: 36px;
   padding-bottom: 16px;
   padding-left: 36px;
-  fill: var(--ico-color);
+  color: var(--ico-color);
 }
 .client-card + .client-card{
   margin-left: 30px;
 }
 
 .client-card:hover{
-  fill: var(--accent-color);
+  color: var(--accent-color);
   border: 1px solid var(--accent-color);  
 
+}
+
+.client-card.link-client:hover {
+  border-color: solid var(--accent-color);
+  color: var(--accent-color);
+}
+.icon-client{
+  fill: currentColor;
 }
 
 .section-title {
