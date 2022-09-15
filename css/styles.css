@@ -178,39 +178,33 @@ a{
   justify-content: center;
   color: var(--contrast-text-color);
 }
-.item-footer{
+
+.icof-link{
+  display: flex;
   background-color: var(--transparent-ico-color);
-  padding: 12px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  justify-content: center;
+  align-items: center;
   fill: var(--ico-color);
 }
-.ico-cont{
-  fill: currentColor;
-  margin-right: 10px;
-  padding-top: 2px;
-}
-/* сщцсети для футера:  */
 
-.social-networks-footer .item-footer{
-  padding: 12px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  fill: var(--contrast-text-color);
-  background-color: var(--transparent-ico-color);
-}
 .ico-footer{
   fill: currentColor;
 }
-.social-networks-footer .item-footer:hover,
-.social-networks-footer .item-footer:focus{
+.icof-link:hover,
+.icof-link:focus{
   color: var(--contrast-text-color);
   background-color: var(--accent-color);
 }
 .social-networks-footer .item-footer + .item-footer{
   margin-left: 10px;
+}
+
+.ico-cont{
+  fill: currentColor;
+  margin-right: 5px;
 }
 
 .nav-link:hover,
@@ -372,22 +366,21 @@ a{
   justify-content: center;
   color: var(--submain-font-color);
 }
-.social-networks .ico-item{
-  padding: 12px;
+
+.ico-link {
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  justify-content: center;
+  align-items: center;
   fill: var(--ico-color);
 }
-
-.ico-link {
-  fill: currentColor;
-}
-.social-networks .ico-item:hover,
-.social-networks .ico-item:focus{
-  color: var(--contrast-text-color);
+.social-networks .ico-link:hover,
+.social-networks .ico-link:focus{
+  fill: var(--contrast-text-color);
   background-color: var(--accent-color);
-}
+} 
 .social-networks .ico-item + .ico-item{
   margin-left: 10px;
 }
@@ -402,7 +395,9 @@ a{
 .client-list{
   display: flex;
 }
-.client-card{
+
+.link-client{
+  display: flex;
   width: 170px;
   height: 92px;
   border: 1px solid var(--ico-color);
@@ -420,16 +415,12 @@ a{
   fill: currentColor;
 }
 
-.client-card:hover,
-.client-card:focus,
 .link-client:hover,
 .link-client:focus
 {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
-
-
 
 .section-title {
   font-size: 36px;
