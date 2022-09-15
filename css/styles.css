@@ -204,7 +204,8 @@ a{
 .ico-footer{
   fill: currentColor;
 }
-.social-networks-footer .item-footer:hover{
+.social-networks-footer .item-footer:hover,
+.social-networks-footer .item-footer:focus{
   color: var(--contrast-text-color);
   background-color: var(--accent-color);
 }
@@ -382,7 +383,8 @@ a{
 .ico-link {
   fill: currentColor;
 }
-.social-networks .ico-item:hover{
+.social-networks .ico-item:hover,
+.social-networks .ico-item:focus{
   color: var(--contrast-text-color);
   background-color: var(--accent-color);
 }
@@ -414,20 +416,20 @@ a{
 .client-card + .client-card{
   margin-left: 30px;
 }
-
-.client-card:hover{
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);  
-
-}
-
-.client-card.link-client:hover {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
-}
 .icon-client{
   fill: currentColor;
 }
+
+.client-card:hover,
+.client-card:focus,
+.link-client:hover,
+.link-client:focus
+{
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+
 
 .section-title {
   font-size: 36px;
